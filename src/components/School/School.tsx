@@ -53,6 +53,7 @@ const School: React.FC<SchoolProps> = () => {
                     <Flex
                         fontFamily={'PWPers'}
                         fontSize={{ base: 30, md: 50 }}
+                        textAlign={'center'}
                         display={!school ? 'flex' : 'none'}
                     >
                         <Typewriter
@@ -84,7 +85,8 @@ const School: React.FC<SchoolProps> = () => {
                             <Flex
                                 width={'100%'}
                                 justify={'left'}
-                                align={'center'}
+                                align={'top'}
+                                fontSize={{ base: 12, md: 15 }}
                             >
                                 <ListIcon as={IoIosSchool} />
                                 {citem}

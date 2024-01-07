@@ -65,6 +65,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     width={'80%'}
                     textAlign={'center'}
                     fontFamily={'Unseen'}
+                    fontSize={{ base: 10, md: 16 }}
                     mr={1}
                     ml={1}
                 >

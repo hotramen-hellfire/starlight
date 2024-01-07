@@ -1,7 +1,7 @@
 import { music, project, scrap } from "./interfaces";
 export const dataAboutImage: string = 'https://raw.githubusercontent.com/hotramen-hellfire/scaling-octo-guacamole/main/imagebanks/vibrant.jpeg';
-export const dataDesktopBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
-export const dataMobileBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
+export const dataDesktopBGLink: string = 'https://wallup.net/wp-content/uploads/2016/01/90513-universe-galaxy-space.jpg';
+export const dataMobileBGLink: string = 'https://wallpapercave.com/wp/wp4324806.jpg';
 export const dataNavbarName: string = 'HIMANSHU'
 export const dataName: string = 'HIMANSHU'
 export const dataGithubLink: string = 'https://github.com/hotramen-hellfire'

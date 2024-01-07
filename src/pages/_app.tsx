@@ -66,7 +66,8 @@ function App({ Component, pageProps }: AppProps) {
           </title>
           <link rel="icon" href="/leaf.png" />
         </Head>
-        {loading && <Loader />}
+        {/* {loading && <Loader />} */}
+        <Loader />
         <Layout>
           <Component {...pageProps} />
         </Layout>

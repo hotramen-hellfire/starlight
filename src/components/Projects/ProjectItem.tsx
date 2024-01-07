@@ -25,7 +25,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 fontFamily='CabinSketch'
                 textAlign={'center'}
                 width={'100%'}
-                fontSize={{ base: 17, md: 40 }}
+                fontSize={{ base: 15, md: 40 }}
             >
                 {props.title}
             </Text>

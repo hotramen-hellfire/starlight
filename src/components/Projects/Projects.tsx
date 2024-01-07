@@ -39,7 +39,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                         display={projDone ? 'unset' : 'none'}
                         fontSize={{ base: 30, md: 50 }}
                     >
-                        MERE PROJECTS
+                        PROJECTS
                     </Text>
                     <Icon
                         fontSize={{ base: 25, md: 40 }}
@@ -62,11 +62,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                                 delay: 250,
                             }}
                             onInit={(typewriter) => {
-                                typewriter.typeString('MERE')
-                                    .pauseFor(500)
-                                typewriter.typeString(' ')
-                                    .pauseFor(1000)
                                 typewriter.typeString('PROJECTS')
+                                    .pauseFor(500)
                                     .callFunction(() => {
                                         setProjDone(true);
                                     })

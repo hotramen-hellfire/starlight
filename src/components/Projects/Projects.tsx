@@ -38,12 +38,11 @@ const Projects: React.FC<ProjectsProps> = () => {
                         textAlign={'center'}
                         display={projDone ? 'unset' : 'none'}
                         fontSize={{ base: 30, md: 50 }}
-                        width={'100%'}
                     >
                         MERE PROJECTS
                     </Text>
                     <Icon
-                        fontSize={40}
+                        fontSize={{ base: 25, md: 40 }}
                         as={FaProjectDiagram}
                     />
                 </Flex>

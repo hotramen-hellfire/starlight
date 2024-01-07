@@ -36,6 +36,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
             >
                 <Icon
                     as={CiLocationOn}
+                    fontSize={{ base: 15, md: 20 }}
                     m={2}
                 />
                 <Text
@@ -56,6 +57,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 <Icon
                     as={MdOutlineAccessTime}
                     m={2}
+                    fontSize={{ base: 15, md: 20 }}
                 />
                 <Text
                     fontFamily='CabinSketch'

@@ -1,7 +1,7 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import { dataAboutImage, dataAboutText, dataCityFrom, dataName } from '../../../data';
+import { dataAboutImage, dataAboutText, dataName } from '../../../data';
 type AboutsProps = {
 
 };

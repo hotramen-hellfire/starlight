@@ -37,15 +37,6 @@ export const dataProjects: project[] = [{
         'Reverse engineered binary executables by inspecting their x86 assemblies using objdump and gef.',
         'Implemented merge sort and binary search in MIPS ISA to optimize query processing over unsorted data.'
     ]
-},
-{
-    title: 'Optimizing with Assembly2',
-    location: 'Course Project, IIT Bombay',
-    time: "Autumn 2023",
-    content: [
-        'Reverse engineered binary executables by inspecting their x86 assemblies using objdump and gef.',
-        'Implemented merge sort and binary search in MIPS ISA to optimize query processing over unsorted data.'
-    ]
 },]
 export const dataScholastics: string[] = [
     'Went to St. Anselms Sr. Secondary School, Mansarovar, Jaipur.',

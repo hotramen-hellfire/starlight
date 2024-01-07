@@ -39,11 +39,11 @@ const School: React.FC<SchoolProps> = () => {
                     />
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 30, md: 50 }}
+                        fontSize={{ base: 22, md: 50 }}
                         textAlign={'center'}
                         display={school ? 'unset' : 'none'}
                     >
-                        MY SCHOLASTICS
+                        SCHOOL
                     </Text>
                 </Flex>
                 <Flex
@@ -52,7 +52,7 @@ const School: React.FC<SchoolProps> = () => {
                 >
                     <Flex
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 30, md: 50 }}
+                        fontSize={{ base: 22, md: 50 }}
                         textAlign={'center'}
                         display={!school ? 'flex' : 'none'}
                     >
@@ -61,11 +61,8 @@ const School: React.FC<SchoolProps> = () => {
                                 delay: 250,
                             }}
                             onInit={(typewriter) => {
-                                typewriter.typeString('MY')
+                                typewriter.typeString('SCHOOL')
                                     .pauseFor(500)
-                                typewriter.typeString(' ')
-                                    .pauseFor(1000)
-                                typewriter.typeString('SCHOLASTICS')
                                     .callFunction(() => {
                                         setSchool(true);
                                     })
@@ -86,7 +83,7 @@ const School: React.FC<SchoolProps> = () => {
                                 width={'100%'}
                                 justify={'left'}
                                 align={'top'}
-                                fontSize={{ base: 12, md: 15 }}
+                                fontSize={{ base: 10, md: 15 }}
                             >
                                 <ListIcon as={IoIosSchool} />
                                 {citem}

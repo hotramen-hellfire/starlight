@@ -55,6 +55,7 @@ const School: React.FC<SchoolProps> = () => {
                         fontSize={{ base: 22, md: 50 }}
                         textAlign={'center'}
                         display={!school ? 'flex' : 'none'}
+                        justify={'center'}
                     >
                         <Typewriter
                             options={{

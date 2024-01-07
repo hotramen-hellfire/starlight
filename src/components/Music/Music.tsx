@@ -52,6 +52,7 @@ const Music: React.FC<MusicProps> = () => {
                     fontSize={{ base: 22, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
+                    justify={'center'}
                     display={!musicDone ? 'flex' : 'none'}
                 >
                     <Typewriter

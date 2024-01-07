@@ -42,6 +42,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                     fontFamily={'PWPers'}
                     fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
+                    justify={'center'}
                     width={'100%'}
                     display={!contactsDone ? 'flex' : 'none'}
                 >

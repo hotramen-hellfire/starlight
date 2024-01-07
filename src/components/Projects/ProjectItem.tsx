@@ -72,9 +72,9 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 width={'90%'}
             >
                 <UnorderedList>
-                    {props.content.map(citem => (
+                    {props.content.map((citem, index) => (
                         <ListItem
-                            key={citem}
+                            key={index}
                         >
                             <Text
                                 fontFamily='CabinSketch'

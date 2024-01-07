@@ -56,6 +56,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                         fontSize={{ base: 30, md: 50 }}
                         textAlign={'center'}
                         width={'100%'}
+                        justify={'center'}
                     >
                         <Typewriter
                             options={{
@@ -79,7 +80,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                     justify={'center'}
                     align={'center'}
                 >
-                    {dataProjects.map(item => <ProjectItem key={item.title} title={item.title} location={item.location} time={item.time} content={item.content} />)}
+                    {dataProjects.map((item, index) => <ProjectItem key={index} title={item.title} location={item.location} time={item.time} content={item.content} />)}
                 </Flex>
             </Flex>
         </>

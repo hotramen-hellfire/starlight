@@ -43,6 +43,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
+                    justify={'center'}
                 >
                     <Typewriter
                         options={{

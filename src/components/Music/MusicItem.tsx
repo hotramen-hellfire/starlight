@@ -1,4 +1,4 @@
-import { AccordionButton, AccordionItem, AccordionPanel, Flex, Text } from '@chakra-ui/react';
+import { AccordionButton, AccordionItem, AccordionPanel, Flex, Icon, Text } from '@chakra-ui/react';
 import React from 'react';
 import { BsChevronDown } from 'react-icons/bs';
 import Iframe from 'react-iframe';
@@ -31,6 +31,9 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                     _hover={{
                         bg: 'transparent'
                     }}
+                    p={0.2}
+                    pl={1}
+                    pr={1}
                 >
                     <Flex
                         flexDirection={'column'}
@@ -38,14 +41,17 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                     >
                         <Text
                             fontFamily={'PencilTypewriter'}
-                            fontSize={20}
+                            fontSize={{ base: 12, md: 16 }}
                             width={'90%'}
                             textAlign={'left'}
                         >
                             {index + 1}&gt; {music.title}  [{music.artist}]
                         </Text>
                     </Flex>
-                    <BsChevronDown />
+                    <Icon
+                        as={BsChevronDown}
+                        fontSize={10}
+                    />
                 </AccordionButton>
                 <AccordionPanel>
                     <Flex

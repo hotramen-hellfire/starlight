@@ -39,17 +39,19 @@ const Music: React.FC<MusicProps> = () => {
                     />
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={50}
                         textAlign={'center'}
                         // width={'100%'}
                         display={musicDone ? 'unset' : 'none'}
+                        fontSize={{ base: 22, md: 50 }}
                     >
                         FAVOURITE MUSIC
                     </Text>
                 </Flex>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 22, md: 50 }}
+                    textAlign={'center'}
+                    width={'100%'}
                     display={!musicDone ? 'flex' : 'none'}
                 >
                     <Typewriter

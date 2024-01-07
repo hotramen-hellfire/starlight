@@ -27,7 +27,7 @@ const Loader = () => (
       flexDirection={'column'}
     >
       <Text
-        fontSize={70}
+        fontSize={{ base: 50, md: 70 }}
         fontFamily={'PWPers'}
         color={'white'}
         position={'absolute'}

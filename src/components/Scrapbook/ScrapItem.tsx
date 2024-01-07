@@ -43,7 +43,7 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 <Text
                     fontFamily={'PencilTypewriter'}
                     width={'100%'}
-                    fontSize={20}
+                    fontSize={{ base: 15, md: 20 }}
                 >
                     [{props.scrap.dateAdded}] {toTitleCase(props.scrap.title)}
                 </Text>
@@ -54,24 +54,22 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 justify={'center'}
                 align={'center'}
             >
-                <Text
-                    fontFamily={'Unseen'}
+                <Stack
+                    spacing={'4px'}
                     width={'100%'}
+                    fontFamily={'Unseen'}
+                    fontSize={{ base: 10, md: 16 }}
                 >
-                    <Stack
-                        spacing={'6px'}
-                    >
-                        {props.scrap.text.map((item, index) => (
-                            <>
-                                <Text
-                                    key={index}
-                                >
-                                    {item}
-                                </Text>
-                            </>
-                        ))}
-                    </Stack>
-                </Text>
+                    {props.scrap.text.map((item, index) => (
+                        <>
+                            <Text
+                                key={index}
+                            >
+                                {item}
+                            </Text>
+                        </>
+                    ))}
+                </Stack>
             </Flex>
             {props.scrap.image &&
                 <Flex

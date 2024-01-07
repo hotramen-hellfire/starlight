@@ -43,7 +43,6 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                         <Text
                             fontFamily={'PencilTypewriter'}
                             fontSize={{ base: 12, md: 16 }}
-                            // width={'100%'}
                             textAlign={'left'}
                             mr={2}
                         >

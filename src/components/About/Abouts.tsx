@@ -92,6 +92,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     width={'90%'}
                     fontFamily={'PencilSRB'}
                     textAlign={'right'}
+                    fontSize={{ base: 12, md: 16 }}
                 >
                     {dataName}<br />{dataCityFrom.toUpperCase()}
                 </Text>

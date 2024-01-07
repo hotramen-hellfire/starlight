@@ -36,22 +36,33 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                     pr={1}
                 >
                     <Flex
-                        flexDirection={'column'}
+                        flexDirection={'row'}
                         width={'100%'}
+                        flexWrap={'wrap'}
                     >
                         <Text
                             fontFamily={'PencilTypewriter'}
                             fontSize={{ base: 12, md: 16 }}
-                            width={'90%'}
+                            // width={'100%'}
                             textAlign={'left'}
+                            mr={2}
                         >
-                            {index + 1}&gt; {music.title}  [{music.artist}]
+                            {index + 1}&gt; {music.title}
+                        </Text>
+                        <Text
+                            fontFamily={'PencilTypewriter'}
+                            fontSize={{ base: 12, md: 16 }}
+                            // width={'100%'}
+                            textAlign={'right'}
+                        >
+                            [{music.artist}]
                         </Text>
                     </Flex>
                     <Icon
                         as={BsChevronDown}
                         fontSize={10}
                     />
+
                 </AccordionButton>
                 <AccordionPanel>
                     <Flex

@@ -33,7 +33,7 @@ const School: React.FC<SchoolProps> = () => {
                     width={'100%'}
                 >
                     <Icon
-                        fontSize={40}
+                        fontSize={{ base: 20, md: 40 }}
                         as={GiSchoolOfFish}
                         mr={2}
                     />

@@ -35,9 +35,10 @@ const Projects: React.FC<ProjectsProps> = () => {
                 >
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 40, md: 50 }}
                         textAlign={'center'}
                         display={projDone ? 'unset' : 'none'}
+                        fontSize={{ base: 30, md: 50 }}
+                        width={'100%'}
                     >
                         MERE PROJECTS
                     </Text>
@@ -52,8 +53,10 @@ const Projects: React.FC<ProjectsProps> = () => {
                 >
                     <Flex
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 40, md: 50 }}
                         display={!projDone ? 'flex' : 'none'}
+                        fontSize={{ base: 30, md: 50 }}
+                        textAlign={'center'}
+                        width={'100%'}
                     >
                         <Typewriter
                             options={{

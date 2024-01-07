@@ -30,7 +30,7 @@ const Abouts: React.FC<AboutsProps> = () => {
             >
                 <Text
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
                     display={abtDone ? 'unset' : 'none'}
@@ -39,8 +39,10 @@ const Abouts: React.FC<AboutsProps> = () => {
                 </Text>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 30, md: 50 }}
                     display={!abtDone ? 'flex' : 'none'}
+                    textAlign={'center'}
+                    width={'100%'}
                 >
                     <Typewriter
                         options={{

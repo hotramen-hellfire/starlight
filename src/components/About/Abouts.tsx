@@ -39,8 +39,8 @@ const Abouts: React.FC<AboutsProps> = () => {
                 </Text>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={{ base: 30, md: 50 }}
                     display={!abtDone ? 'flex' : 'none'}
+                    fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
                 >
@@ -80,7 +80,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                 >
                     <Image
                         src={dataAboutImage}
-                        maxHeight={'300px'}
+                        maxHeight={{ base: '200px', md: '300px' }}
                         border={'3px solid white'}
                         filter={color ? 'none' : 'grayscale(100%)'}
                         transition={'filter 1000ms linear'}

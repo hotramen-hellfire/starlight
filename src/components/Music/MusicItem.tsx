@@ -1,5 +1,5 @@
-import { AccordionButton, AccordionItem, AccordionPanel, Flex, Icon, Text } from '@chakra-ui/react';
-import React from 'react';
+import { AccordionButton, AccordionItem, AccordionPanel, Flex, Icon, Spinner, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
 import { BsChevronDown } from 'react-icons/bs';
 import Iframe from 'react-iframe';
 import { music } from '../../../interfaces';
@@ -10,6 +10,7 @@ type MusicItemProps = {
 };
 
 const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
+    const [videoLoad, setVideoLoad] = useState(false);
     const getEmbedUrl = (url: string) => {
         if (url.indexOf('/embed/') > 0) { return url; }
         if (url.indexOf('/watch?v=') > 0) { return url.replace('/watch?v=', '/embed/'); }
@@ -80,14 +81,21 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                             m={2}
                             w={{ base: '80%', lg: '40%' }}
                             h={{ base: '155px', lg: '256px' }}
+                            justify={'center'}
+                            align={'center'}
                         >
+                            <Spinner
+                                size={'xl'}
+                                display={!videoLoad ? 'flex' : 'none'}
+                            />
                             <Iframe url={getEmbedUrl(music.yturl)}
                                 className=""
-                                display="block"
                                 position="relative"
                                 width='100%'
                                 height='100%'
                                 frameBorder={0}
+                                onLoad={() => { setVideoLoad(true) }}
+                                display={videoLoad ? 'block' : 'none'}
                             />
                         </Flex>
                         }

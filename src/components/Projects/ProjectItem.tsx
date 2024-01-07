@@ -13,7 +13,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
 
     return (<>
         <Flex
-            width={'90%'}
+            width={'100%'}
             flexDirection={'column'}
             borderRadius={'10px'}
             m={2}

@@ -15,7 +15,7 @@ const Music: React.FC<MusicProps> = () => {
             <Flex
                 id='music'
                 zIndex={3}
-                width={'90%'}
+                width={'100%'}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}

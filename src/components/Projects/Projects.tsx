@@ -14,7 +14,7 @@ const Projects: React.FC<ProjectsProps> = () => {
     return (
         <>
             <Flex
-                width={'90%'}
+                width={'100%'}
                 zIndex={3}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}

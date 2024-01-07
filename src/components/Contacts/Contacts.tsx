@@ -4,7 +4,7 @@ import { FaGithubAlt } from 'react-icons/fa';
 import { ImInstagram } from "react-icons/im";
 import { MdOutlineEmail } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataEmail, dataGithubLink, dataInstagramUsername } from '../../../data';
+import { dataEmail, dataGithubLink, dataInstagramUsername } from '../../../data';
 type AboutsProps = {
 
 };
@@ -21,7 +21,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataEmail || dataGithubLink || dataInstagramUsername ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{

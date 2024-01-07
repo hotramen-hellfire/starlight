@@ -29,25 +29,28 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
             >
                 {props.title}
             </Text>
-            <Flex
-                direction={'row'}
-                justify={'center'}
-                align={'center'}
-            >
-                <Icon
-                    as={CiLocationOn}
-                    fontSize={{ base: 12, md: 20 }}
-                    m={2}
-                />
-                <Text
-                    fontFamily='CabinSketch'
-                    textAlign={'center'}
-                    width={'100%'}
-                    fontSize={{ base: 10, md: 15 }}
+            {
+                props.location &&
+                <Flex
+                    direction={'row'}
+                    justify={'center'}
+                    align={'center'}
                 >
-                    {props.location}
-                </Text>
-            </Flex>
+                    <Icon
+                        as={CiLocationOn}
+                        fontSize={{ base: 12, md: 20 }}
+                        m={2}
+                    />
+                    <Text
+                        fontFamily='CabinSketch'
+                        textAlign={'center'}
+                        width={'100%'}
+                        fontSize={{ base: 10, md: 15 }}
+                    >
+                        {props.location}
+                    </Text>
+
+                </Flex>}
 
             <Flex
                 direction={'row'}

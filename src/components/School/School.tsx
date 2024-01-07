@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { GiSchoolOfFish } from 'react-icons/gi';
 import { IoIosSchool } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataScholastics } from '../../../data';
+import { dataScholastics } from '../../../data';
 type SchoolProps = {
 
 };
@@ -19,7 +19,7 @@ const School: React.FC<SchoolProps> = () => {
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataScholastics ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{

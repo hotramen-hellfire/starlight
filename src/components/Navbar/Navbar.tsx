@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             router.push('/')
                         }}
                     >
-                        {dataNavbarName}
+                        {dataNavbarName.toUpperCase()}
                     </Text>
                 </Flex>
                 <Flex

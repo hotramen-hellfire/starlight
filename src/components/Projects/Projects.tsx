@@ -2,7 +2,7 @@ import { Flex, Icon, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { FaProjectDiagram } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataProjects } from '../../../data';
+import { dataProjects } from '../../../data';
 import ProjectItem from './ProjectItem';
 
 type ProjectsProps = {
@@ -20,7 +20,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataProjects ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{

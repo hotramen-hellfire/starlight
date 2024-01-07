@@ -95,7 +95,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     textAlign={'right'}
                     fontSize={{ base: 12, md: 16 }}
                 >
-                    {dataName}<br />{dataCityFrom.toUpperCase()}
+                    {dataName.toUpperCase()}
                 </Text>
             </Flex >
         </>

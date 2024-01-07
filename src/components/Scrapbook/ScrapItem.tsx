@@ -90,6 +90,7 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 border='2px solid white'
                 w={{ base: '80%', lg: '40%' }}
                 h={{ base: '155px', lg: '250px' }}
+                mt={6}
             >
                 <Iframe url={getEmbedUrl(props.scrap.yturl)}
                     className=""

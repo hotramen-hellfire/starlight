@@ -25,7 +25,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 fontFamily='CabinSketch'
                 textAlign={'center'}
                 width={'100%'}
-                fontSize={{ base: 20, md: 40 }}
+                fontSize={{ base: 17, md: 40 }}
             >
                 {props.title}
             </Text>
@@ -36,7 +36,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
             >
                 <Icon
                     as={CiLocationOn}
-                    fontSize={{ base: 15, md: 20 }}
+                    fontSize={{ base: 12, md: 20 }}
                     m={2}
                 />
                 <Text
@@ -57,7 +57,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 <Icon
                     as={MdOutlineAccessTime}
                     m={2}
-                    fontSize={{ base: 15, md: 20 }}
+                    fontSize={{ base: 12, md: 20 }}
                 />
                 <Text
                     fontFamily='CabinSketch'

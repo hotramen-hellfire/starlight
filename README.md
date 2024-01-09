@@ -1,40 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> [My Website](https://www.cse.iitb.ac.in/~himanzu/)
+> [Repository](https://github.com/hotramen-hellfire/scaling-octo-guacamole/tree/main)
+# Hi
+This was an attempt to create a personal website with a scrapbook/ blog and other editable components. All of the data/ info is bound to the `data.tsx` file in the root of the next project, i.e. in `/octo/data.tsx`. 
+# How to use the template
+All of the editable features are listed in the `data.tsx` file along with the comments for each of the types. After filling those in you may proceed to build your project. . .
+(or even build first and see the changes that `data.tsx` has on the go)
+## The Set Up
+ 1. For the build you need `wsl` on windows as we are going to use `npm`. Install `npm` on `wsl/ linux distro` whatever that you are using.
+2. In `/octo` run `npm i` then `npm run dev` to start the development server, follow the localhost link provided to see your website in action.
+3. Further you can use your preferred mode of deployment to get your website up. If you are using the `mars.cse.iitb` server, you need to export the static code and set up a redirect as in the `octo/public_html` folder. I use Vercel for deployment, you do need to create a GitHub repo for your code.
+(do reach out if you need help in any of the above steps or are not familiar with the development envs)
+# BYE :)

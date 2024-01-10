@@ -90,7 +90,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                         width={'80%'}
                         justify={'center'}
                         align={'center'}
-                    >        <Link href="mailto:geeksforgeeks@gmail.com" display={'flex'} alignItems={'center'}>
+                    >        <Link href="mailto:himanshu16gangwal@iitb.ac.in" display={'flex'} alignItems={'center'}>
                             <Icon
                                 as={MdOutlineEmail}
                                 fontSize={30}

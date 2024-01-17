@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <>
       <Stack
-        m={{ base: 3, md: 5 }}
+        m={{ base: 4, md: 9 }}
         justify={'center'}
         align={'center'}
         flexDirection={'column'}

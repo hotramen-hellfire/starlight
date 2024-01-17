@@ -3,7 +3,7 @@ import Contacts from '@/components/Contacts/Contacts'
 import Projects from '@/components/Projects/Projects'
 import Quote from '@/components/Quote/Quote'
 import School from '@/components/School/School'
-import { Stack } from '@chakra-ui/react'
+import { Flex, Stack } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { dataName } from '../../data'
 export default function Home() {
@@ -83,9 +83,9 @@ export default function Home() {
   return (
     <>
       <Stack
+        m={{ base: 3, md: 5 }}
         justify={'center'}
         align={'center'}
-        m={9}
         flexDirection={'column'}
       >
         <Abouts />

@@ -8,16 +8,7 @@ export const dataGithubLink: string = 'https://github.com/hotramen-hellfire'
 export const dataEmail: string = 'himanshu16gangwal@iitb.ac.in'
 export const dataInstagramUsername: string = 'himanxugar'
 export const dataAboutText: string = 'Hi, I am Himanshu Gangwal, sophomore at the Department of Computer Science and Engineering at the Indian Institute of Technology, Bombay, I like creating cool stuff, much like this website you are visiting. I love music especially hiphop, but sometimes I love listening to pop too, Ritviz, Dua Lipa etc. My favourite programming language is TypeScript. I do not play a lot of video games, I used to but then I got bored, too bored, so bored that I started to read and go out watch a movie or just wander. Color the image pls;/. . .'
-export const dataProjects: project[] = [{
-    title: 'FullStack Imageboard',
-    time: "December, 2023",
-    content: [
-        'Developed an highly Imageboard website where users can create highly customizable boards/ posts / comments and vote on the content availible.',
-        'The project was developed with NextJs and Chakra UI based Frontend and Google Firestore for databasing needs.',
-        'Users can also tag boards by intrests to find other people with similar interests.',
-        'Have a look at https://saitama-cyan.vercel.app/',
-    ]
-},
+export const dataProjects: project[] = [
 {
     title: 'Trading Algorithms and Market Simulations',
     location: 'Course Project, IIT Bombay',

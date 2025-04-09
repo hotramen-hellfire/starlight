@@ -23,62 +23,29 @@ export default function Home() {
     author: ""
   })
   useEffect(() => {
-    async function updateQuote1() {
-      setQuoteLoading1(true);
-      const response = await fetch("https://api.quotable.io/random?tags=humorous");
-      const data = await response.json();
-      if (response.ok) {
-        setq1({
-          text: data.content,
-          author: data.author
-        })
-      } else {
-        setq1({
-          text: "",
-          author: dataName
-        })
+    async function updateQuote(setQuote: any, setLoading: any) {
+      setLoading(true);
+      try {
+        const response = await fetch("https://api.quotable.io/random?tags=humorous");
+        const data = await response.json();
+  
+        if (response.ok) {
+          setQuote({ text: data.content, author: data.author });
+        } else {
+          setQuote({ text: "", author: "Unknown" });
+        }
+      } catch (error) {
+        console.error("Failed to fetch quote:", error);
+        setQuote({ text: "", author: "Fetch Error" });
+      } finally {
+        setLoading(false);
       }
-      setQuoteLoading1(false);
     }
-    async function updateQuote2() {
-      setQuoteLoading2(true);
-      const response = await fetch("https://api.quotable.io/random?tags=humorous");
-      const data = await response.json();
-      if (response.ok) {
-        setq2({
-          text: data.content,
-          author: data.author
-        })
-      } else {
-        setq2({
-          text: "",
-          author: dataName
-        })
-      }
-      setQuoteLoading2(false);
-    }
-    async function updateQuote3() {
-      setQuoteLoading3(true);
-      const response = await fetch("https://api.quotable.io/random?tags=humorous");
-      const data = await response.json();
-      if (response.ok) {
-        setq3({
-          text: data.content,
-          author: data.author
-        })
-      } else {
-        setq3({
-          text: "",
-          author: dataName
-        })
-      }
-      setQuoteLoading3(false);
-    }
-    if (!q1.text) updateQuote1();
-    if (!q2.text) updateQuote2();
-    if (!q3.text) updateQuote3();
-
-  })
+  
+    if (!q1.text) updateQuote(setq1, setQuoteLoading1);
+    if (!q2.text) updateQuote(setq2, setQuoteLoading2);
+    if (!q3.text) updateQuote(setq3, setQuoteLoading3);
+  }, []); // <- Add empty dependency array  
 
   return (
     <>
@@ -89,11 +56,11 @@ export default function Home() {
         flexDirection={'column'}
       >
         <Abouts />
-        <Quote text={q1.text} author={q1.author} loading={quoteLoading1} />
+        {q1.text && <Quote text={q1.text} author={q1.author} loading={quoteLoading1} />}
         <Projects />
-        <Quote text={q2.text} author={q2.author} loading={quoteLoading2} />
+        {q2.text && <Quote text={q2.text} author={q2.author} loading={quoteLoading2} />}
         <School />
-        <Quote text={q3.text} author={q3.author} loading={quoteLoading3} />
+        {q3.text && <Quote text={q3.text} author={q3.author} loading={quoteLoading3} />}
         <Contacts />
       </Stack>
     </>
